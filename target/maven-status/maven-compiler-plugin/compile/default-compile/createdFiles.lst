@@ -1,4 +1,6 @@
-com\mycompany\pronosticos_deportivos\ResultadoEnum.class
-com\mycompany\pronosticos_deportivos\Ronda.class
 com\mycompany\pronosticos_deportivos\Equipo.class
+com\mycompany\pronosticos_deportivos\ResultadoEnum.class
+com\mycompany\pronosticos_deportivos\Pronosticos_Deportivos.class
 com\mycompany\pronosticos_deportivos\Partido.class
+com\mycompany\pronosticos_deportivos\Pronostico.class
+com\mycompany\pronosticos_deportivos\Ronda.class
