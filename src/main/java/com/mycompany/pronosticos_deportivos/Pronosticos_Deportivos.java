@@ -6,9 +6,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
-import java.util.Scanner;
+//import java.util.Scanner;
 import java.util.regex.Pattern;
  
 
@@ -30,6 +29,7 @@ public class Pronosticos_Deportivos  {
       public static void main( String args[] ) //throws FileNotFoundException, IOException
       {  
       
+          /*
       // Ingresamos por consola la ruta completa de los archivos
       
       Scanner miObjetoScanner = new Scanner( System.in );    
@@ -42,8 +42,9 @@ public class Pronosticos_Deportivos  {
       
       // Leo los registros del archivo de Resultados (Partido)
     
-      Path rutaResultados = Paths.get(Archivo_Partidos_CSV);
-      
+*/
+      //Path rutaResultados = Paths.get(Archivo_Partidos_CSV);
+      Path rutaResultados = Paths.get(args[0]);
       List<String> registrosResultados = null;
       
       try{
@@ -55,7 +56,8 @@ public class Pronosticos_Deportivos  {
           System.exit(1);
       }
       
-      Path rutaPronosticos = Paths.get(Archivo_Pronosticos_CSV);
+     // Path rutaPronosticos = Paths.get(Archivo_Pronosticos_CSV);
+      Path rutaPronosticos = Paths.get(args[1]);
       
       List<String> registrosPronosticos = null;
       
@@ -77,7 +79,6 @@ public class Pronosticos_Deportivos  {
          boolean primer_registro_resultados = true;
          boolean primer_registro_pronosticos = true;
          
-         //int cantidadRegistrosResultados = registrosResultados.size();
          for (String linea:registrosResultados) {
             
             // diseño de registro 1,Argentina,1,2,Arabia Saudita
@@ -206,8 +207,7 @@ public class Pronosticos_Deportivos  {
         }
     
     // comienzo a recorrer todas las lineas del pronostico y a calcular los puntos     
-    // Collection<Pronostico> Pronosticos= new ArrayList<Pronostico>();
-    int puntos_acumulados = 0;
+     int puntos_acumulados = 0;
       
     String participante_actual = "";
           

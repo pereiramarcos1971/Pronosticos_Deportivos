@@ -49,7 +49,6 @@ public class Partido {
     }
 
      
-    //// METODO resultado  
     public ResultadoEnum resultado(Equipo equipo) {
   
         ResultadoEnum Resultado = null;

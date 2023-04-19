@@ -23,7 +23,7 @@ import org.junit.Test;
 public class PronosticoTest {
     
     @Test
-    public void CalcularCorrectamentePuntajeDeMarianaConUnaRondaDeUnPartido(){
+    public void CalcularCorrectamentePuntajeDePronostico(){
         
         String participante = "Pedro";
         Equipo equipo1 = new Equipo("Argentina");
