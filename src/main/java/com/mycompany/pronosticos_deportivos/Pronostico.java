@@ -4,7 +4,8 @@ package com.mycompany.pronosticos_deportivos;
 public class Pronostico {
     
     private String participante;
-    private Ronda ronda;
+    private String nro_ronda;
+    private String nro_fase;
     private Partido partido;
     private Equipo equipo;
     private ResultadoEnum resultado; 
@@ -42,48 +43,48 @@ public class Pronostico {
         this.participante = participante;
     }
 
-  
-    public Ronda getRonda() {
-        return ronda;
+    public String getNro_ronda() {
+        return nro_ronda;
     }
 
-    public void setRonda(Ronda ronda) {
-        this.ronda = ronda;
+    public void setNro_ronda(String nro_ronda) {
+        this.nro_ronda = nro_ronda;
+    }
+
+    public String getNro_fase() {
+        return nro_fase;
+    }
+
+    public void setNro_fase(String nro_fase) {
+        this.nro_fase = nro_fase;
     }
 
     
-    
-    
-    public Pronostico(String participante,  Ronda ronda, Partido partido, 
-            Equipo equipo, ResultadoEnum resultado) {
+    public Pronostico(String participante, String nro_ronda, String nro_fase, 
+            Partido partido, Equipo equipo, ResultadoEnum resultado) {
         
         this.participante = participante;
-        this.ronda = ronda;
+        this.nro_ronda = nro_ronda;
+        this.nro_fase = nro_fase;
         this.partido = partido;
         this.equipo = equipo;
-        this.resultado = resultado;
+        this.resultado = resultado;       
+    }  
+    
+    public boolean acertado(){
+        
+        boolean acierto=true;
+        
+        if (this.resultado == partido.resultado(equipo))   
+            acierto=true;
+        else
+            acierto=false;
+        
+         return acierto;
+
         
     }
     
     
-    
-    public int puntos(){
-        
-        int p = 0;
-         
-        for(Partido partido_buscado:ronda.getPartidos()){ // busco el partido en la ronda
-
-            if (partido_buscado.getEquipo1().getNombre().equals(partido.getEquipo1().getNombre())&&
-                partido_buscado.getEquipo2().getNombre().equals(partido.getEquipo2().getNombre())) {
-
-                if (this.resultado == partido_buscado.resultado(equipo))   // resultado del pronostico = resultado del partido de esa ronda
-                    p=1;
-                else
-                    p=0;
-            }
-        }    
-        return p;
-    }
-
 }
 

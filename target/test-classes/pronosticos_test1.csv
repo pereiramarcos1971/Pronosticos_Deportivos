@@ -1,17 +1,23 @@
-Participante;Ronda;Equipo 1;Gana 1;Empata;Gana 2;Equipo 2
-Mariana;1;Argentina;X;;;Arabia Saudita
-Mariana;1;Polonia;;X;;Mexico
-Mariana;1;Argentina;X;;;Mexico
-Mariana;1;Arabia Saudita;;;X;Polonia
-Pedro;1;Argentina;;;X;Arabia Saudita
-Pedro;1;Polonia;;;X;Mexico
-Pedro;1;Argentina;X;;;Mexico
-Pedro;1;Arabia Saudita;X;;;Polonia
-Mariana;2;Argentina;X;;;Arabia Saudita
-Mariana;2;Polonia;X;;;Mexico
-Mariana;2;Argentina;;X;;Mexico
-Mariana;2;Arabia Saudita;;X;;Polonia
-Pedro;2;Argentina;;X;;Arabia Saudita
-Pedro;2;Polonia;;X;;Mexico
-Pedro;2;Argentina;;X;;Mexico
-Pedro;2;Arabia Saudita;;;X;Polonia
+Participante;Fase;Ronda;Equipo 1;Gana 1;Empata;Gana 2;Equipo 2
+Mariana;1;1;Argentina;;;X;Arabia Saudita
+Mariana;1;1;Polonia;;X;;Mexico
+Mariana;1;1;Argentina;X;;;Mexico
+Mariana;1;1;Arabia Saudita;;;X;Polonia
+Pedro;1;1;Argentina;X;;;Arabia Saudita
+Pedro;1;1;Polonia;X;;;Mexico
+Pedro;1;1;Argentina;X;;;Mexico
+Pedro;1;1;Arabia Saudita;X;;;Polonia
+Mariana;1;2;Argentina;X;;;Arabia Saudita
+Mariana;1;2;Polonia;X;;;Mexico
+Mariana;1;2;Argentina;X;;;Mexico
+Mariana;1;2;Arabia Saudita;;;X;Polonia
+Pedro;1;2;Argentina;;X;;Arabia Saudita
+Pedro;1;2;Polonia;;X;;Mexico
+Pedro;1;2;Argentina;;X;;Mexico
+Pedro;1;2;Arabia Saudita;;;X;Polonia
+Mariana;2;1;Argentina;X;;;Arabia Saudita
+Mariana;2;1;Polonia;X;;;Mexico
+Pedro;2;1;Argentina;X;;;Arabia Saudita
+Pedro;2;1;Polonia;X;;;Mexico
+Mariana;3;1;Argentina;X;;;Polonia
+Pedro;3;1;Argentina;X;;;Polonia

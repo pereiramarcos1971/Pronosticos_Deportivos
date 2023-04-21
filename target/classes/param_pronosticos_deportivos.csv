@@ -1,0 +1,2 @@
+JDBC_DRIVER;DB_URL;USER;PASSWORD;PUNTOS_PARTIDO;PUNTOS_EXTRA_RONDA;PUNTOS_EXTRA_FASE
+com.mysql.jdbc.Driver;jdbc:mysql://localhost:3306/pronosticos_deportivos;root;root;1;2;3

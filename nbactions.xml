@@ -10,11 +10,12 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:3.0.0:exec</goal>
             </goals>
             <properties>
-                <exec.vmArgs></exec.vmArgs>
+                <exec.vmArgs>\</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
-                <exec.appArgs>"C:\TP_Integrador\Pronosticos_Deportivos\src\test\resources\resultados_test1.csv" "C:\TP_Integrador\Pronosticos_Deportivos\src\test\resources\pronosticos_test1.csv"</exec.appArgs>
+                <exec.appArgs>"C:\TP_Integrador\Pronosticos_Deportivos\src\test\resources\resultados_test1.csv" "C:\TP_Integrador\Pronosticos_Deportivos\src\main\resources\param_pronosticos_deportivos.csv"</exec.appArgs>
                 <exec.mainClass>${packageClassName}</exec.mainClass>
                 <exec.executable>java</exec.executable>
+                <exec.workingdir>C:\TP_Integrador\Pronosticos_Deportivos</exec.workingdir>
             </properties>
         </action>
         <action>
@@ -27,12 +28,13 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:3.0.0:exec</goal>
             </goals>
             <properties>
-                <exec.vmArgs>-agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</exec.vmArgs>
+                <exec.vmArgs>\ -agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
-                <exec.appArgs>"C:\TP_Integrador\Pronosticos_Deportivos\src\test\resources\resultados_test1.csv" "C:\TP_Integrador\Pronosticos_Deportivos\src\test\resources\pronosticos_test1.csv"</exec.appArgs>
+                <exec.appArgs>"C:\TP_Integrador\Pronosticos_Deportivos\src\test\resources\resultados_test1.csv" "C:\TP_Integrador\Pronosticos_Deportivos\src\main\resources\param_pronosticos_deportivos.csv"</exec.appArgs>
                 <exec.mainClass>${packageClassName}</exec.mainClass>
                 <exec.executable>java</exec.executable>
                 <jpda.listen>true</jpda.listen>
+                <exec.workingdir>C:\TP_Integrador\Pronosticos_Deportivos</exec.workingdir>
             </properties>
         </action>
         <action>
@@ -45,11 +47,12 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:3.0.0:exec</goal>
             </goals>
             <properties>
-                <exec.vmArgs></exec.vmArgs>
+                <exec.vmArgs>\</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
                 <exec.mainClass>${packageClassName}</exec.mainClass>
                 <exec.executable>java</exec.executable>
-                <exec.appArgs>"C:\TP_Integrador\Pronosticos_Deportivos\src\test\resources\resultados_test1.csv" "C:\TP_Integrador\Pronosticos_Deportivos\src\test\resources\pronosticos_test1.csv"</exec.appArgs>
+                <exec.appArgs>"C:\TP_Integrador\Pronosticos_Deportivos\src\test\resources\resultados_test1.csv" "C:\TP_Integrador\Pronosticos_Deportivos\src\main\resources\param_pronosticos_deportivos.csv"</exec.appArgs>
+                <exec.workingdir>C:\TP_Integrador\Pronosticos_Deportivos</exec.workingdir>
             </properties>
         </action>
     </actions>

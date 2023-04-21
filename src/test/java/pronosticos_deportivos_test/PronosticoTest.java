@@ -5,6 +5,7 @@
 package pronosticos_deportivos_test;
 
 import com.mycompany.pronosticos_deportivos.Equipo;
+import com.mycompany.pronosticos_deportivos.Fase;
 import com.mycompany.pronosticos_deportivos.Partido;
 import com.mycompany.pronosticos_deportivos.Pronostico;
 import com.mycompany.pronosticos_deportivos.ResultadoEnum;
@@ -31,14 +32,16 @@ public class PronosticoTest {
         Partido partido = new Partido(3, 0, equipo1, equipo2);
         ArrayList<Partido> Partidos = new ArrayList<>();
         Partidos.add(partido);
-        Ronda ronda = new Ronda("2", Partidos);
+        ArrayList<Ronda> Rondas = new ArrayList<>();
+        Ronda ronda = new Ronda("1", Partidos);
+        Fase fase = new Fase("1",Rondas );
         Equipo equipo = new Equipo("Argentina");
         ResultadoEnum resultado = ResultadoEnum.GANADOR;
 
          
-        Pronostico pronostico = new Pronostico(participante, ronda, partido, equipo, resultado );
+        Pronostico pronostico = new Pronostico(participante,"1", "1", partido, equipo, resultado );
                 
-        assertEquals(1, pronostico.puntos());
+        assertEquals(true, pronostico.acertado());
 
         
     }
